@@ -1,2 +1,3 @@
 # good-repo-poc
-Proof of Concept of a good repository
+
+> An _opinionated_ approach of a "good" repository.
