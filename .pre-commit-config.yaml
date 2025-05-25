@@ -24,3 +24,5 @@ repos:
       - id: ruff-check
         args: ["--fix"]
       - id: ruff-format
+
+exclude: .devcontainer/devcontainer-lock.json
