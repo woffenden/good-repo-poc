@@ -1,5 +1,5 @@
 [project]
-name = "good-repo-poc"
+name = "good-repo"
 version = "0.0.1"
 description = "Proof of Concept of a good repository"
 readme = "README.md"
