@@ -3,6 +3,7 @@
   "language": "en-GB",
   "words": [
     "chainguard",
+    "containerfile",
     "devcontainers",
     "pyproject",
     "sarif",
