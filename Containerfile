@@ -2,7 +2,7 @@
 # Stage: Build
 # From: cgr.dev/chainguard/python:latest-dev
 ##################################################
-FROM cgr.dev/chainguard/python:latest-dev@sha256:83368419da958ef8f7b049c1dc52238a77a8daa2ed1f264e2fb8444bc9f82b06 AS build
+FROM cgr.dev/chainguard/python:latest-dev@sha256:83368419da958ef8f7b049c1dc52238a77a8daa2ed1f264e2fb8444bc9f82b06 AS builder
 
 WORKDIR /app
 
@@ -21,7 +21,7 @@ FROM cgr.dev/chainguard/python:latest@sha256:0ed9f745adb1df1131a46e89945bde7117e
 
 WORKDIR /app
 
-COPY --from=build /app/.venv /app/.venv
+COPY --from=builder /app/.venv /app/.venv
 COPY app/ /app
 
 ENTRYPOINT ["/app/.venv/bin/python", "main.py"]
