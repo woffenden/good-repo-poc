@@ -1,7 +1,9 @@
 {
   "name": "good-repo-poc",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
-  "features": {},
+  "image": "ghcr.io/ministryofjustice/devcontainer-base:latest",
+  "features": {
+    "ghcr.io/ministryofjustice/devcontainer-feature/astral:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
