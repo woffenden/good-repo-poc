@@ -4,7 +4,9 @@ version = "0.0.1"
 description = "Proof of Concept of a good repository"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "flask==3.1.1",
+]
 
 [dependency-groups]
 dev = [
