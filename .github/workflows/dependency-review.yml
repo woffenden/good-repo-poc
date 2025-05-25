@@ -16,6 +16,10 @@ jobs:
       contents: read
       pull-requests: write
     steps:
+      - name: Monitor GitHub Actions Permissions
+        id: monitor_permissions
+        uses: GitHubSecurityLab/actions-permissions/monitor@31cf7361439cbdffbc73a3bb138b7e1662d46c9b # v1.0.2-beta6
+
       - name: Harden Runner
         id: harden_runner
         uses: step-security/harden-runner@0634a2670c59f64b4a01f0f96f84700a4088b9f0 # v2.12.0
