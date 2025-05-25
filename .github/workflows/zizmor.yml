@@ -43,7 +43,7 @@ jobs:
         id: run_zizmor
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SSL_CERT_FILE: /Users/mitmproxyuser/.mitmproxy/mitmproxy-ca-cert.pem
+          SSL_CERT_FILE: /home/mitmproxyuser/.mitmproxy/mitmproxy-ca-cert.pem
         run: |
           uvx zizmor --format sarif . > zizmor.sarif
 
