@@ -1,3 +1,5 @@
+"""Main module for the Flask application."""
+
 from flask import Flask
 
 app = Flask(__name__)
@@ -5,6 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
+    """Return a friendly greeting."""
     return "Hello, World!"
 
 
