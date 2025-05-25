@@ -1,5 +1,12 @@
 {
   "version": "0.2",
   "language": "en-GB",
-  "words": ["chainguard", "devcontainers", "pyproject", "sarif", "venv", "zizmor"]
+  "words": [
+    "chainguard",
+    "devcontainers",
+    "pyproject",
+    "sarif",
+    "venv",
+    "zizmor"
+  ]
 }
