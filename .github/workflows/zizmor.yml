@@ -19,10 +19,9 @@ jobs:
       contents: read
       security-events: write
     steps:
-      # Disabling as this breaks Zizmor
-      # - name: Monitor GitHub Actions Permissions
-      #   id: monitor_permissions
-      #   uses: GitHubSecurityLab/actions-permissions/monitor@31cf7361439cbdffbc73a3bb138b7e1662d46c9b # v1.0.2-beta6
+      - name: Monitor GitHub Actions Permissions
+        id: monitor_permissions
+        uses: GitHubSecurityLab/actions-permissions/monitor@31cf7361439cbdffbc73a3bb138b7e1662d46c9b # v1.0.2-beta6
 
       - name: Harden Runner
         id: harden_runner
@@ -44,6 +43,7 @@ jobs:
         id: run_zizmor
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          UV_NATIVE_TLS: true
         run: |
           uvx zizmor --format sarif . > zizmor.sarif
 
