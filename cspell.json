@@ -4,8 +4,10 @@
   "words": [
     "aquasecurity",
     "chainguard",
+    "charliermarsh",
     "containerfile",
     "devcontainers",
+    "pydocstyle",
     "pyproject",
     "sarif",
     "venv",
