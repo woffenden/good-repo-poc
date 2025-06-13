@@ -25,6 +25,8 @@ EOF
 # Stage: final
 # From: docker.io/python:3.13-alpine3.21
 ##################################################
+#checkov:skip=CKV_DOCKER_2: HEALTHCHECK not required
+
 FROM docker.io/python:3.13-alpine3.21@sha256:452682e4648deafe431ad2f2391d726d7c52f0ff291be8bd4074b10379bb89ff AS final
 
 LABEL org.opencontainers.image.vendor="Woffenden" \
